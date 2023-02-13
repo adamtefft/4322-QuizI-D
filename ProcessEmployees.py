@@ -5,37 +5,37 @@ asked to run a report on the employee file and display the results of BEFORE AND
 
 You will create a dictionary that has the full employee name as the key and ONLY their new salary as the value.
 
-Iternate through the dictionary to print out their name and thier new salary (as in image)
+Iterate through the dictionary to print out their name and thier new salary (as in image)
 '''
 
 import csv
 
-#open the file
+# open the file
+
+infile = csv.reader(open("employee_data.csv"))
+next(infile)
 
 
+# create an empty dictionary
+
+new_dictionary = {}
+
+# use a loop to iterate through the csv file
 
 
-#create an empty dictionary
-
-
-#use a loop to iterate through the csv file
-
-
-    #check if the employee fits the search criteria
-
-
-    
+for i in infile:
+    # check if the employee fits the search criteria
+    # new_dictionary[i[1]] = i[5]
+    # print(new_dictionary)
+    if i[3] == "Marketing":
+        if i[4] == "CSR":
+            print(f"Manager Name: {i[1]} {i[2]} Current Salary: {i[5]}")
 
 print()
 print('=========================================')
 print()
 
-#iternate through the dictionary and print out the key and value as per printout
+# iternate through the dictionary and print out the key and value as per printout
+for i in new_dictionary:
 
-
-
-          
-        
-
-        
-    
+    print(i)
