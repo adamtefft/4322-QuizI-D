@@ -30,6 +30,7 @@ for i in infile:
     if i[3] == "Marketing":
         if i[4] == "CSR":
             print(f"Manager Name: {i[1]} {i[2]} Current Salary: {i[5]}")
+            new_dictionary[i[1]] = i[5]
 
 print()
 print('=========================================')
@@ -37,5 +38,4 @@ print()
 
 # iternate through the dictionary and print out the key and value as per printout
 for i in new_dictionary:
-
-    print(i)
+    print(f"Manager Name: {i}")
