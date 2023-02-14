@@ -38,4 +38,4 @@ print()
 
 # iternate through the dictionary and print out the key and value as per printout
 for i in new_dictionary:
-    print(f"Manager Name: {i} New Salary: {new_dictionary[i]}")
+    print(f"Manager Name: {i} New Salary: {round(new_dictionary[i],1)}")
